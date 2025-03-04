@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Tracker - Work Sample</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f4f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #d6e6f2;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #357ABD;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Financial Tracker - Work Sample</header>
+    <div class="container">
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>Financial Tracker is a student-focused budgeting application designed to help individuals efficiently manage their expenses. The app provides an intuitive interface, real-time financial tracking, and goal-setting features that enable students to plan and allocate their money effectively. This project follows a structured UX design process to ensure usability and effectiveness.</p>
+        </div>
+        <div class="section">
+            <h2>Problem Statement</h2>
+            <p>Students often struggle with managing finances due to irregular income, unexpected expenses, and a lack of structured financial tracking. This difficulty can impact their academic performance and overall financial stability. The Financial Tracker app addresses these issues by providing an easy-to-use platform to track expenses, set budgets, and achieve financial goals.</p>
+        </div>
+        <div class="section">
+            <h2>Research & Discovery</h2>
+            <p>To ensure that our app meets the needs of students, we conducted extensive research using user interviews and surveys. Our key findings include:</p>
+            <ul>
+                <li>70% of students struggle with financial planning due to unexpected expenses.</li>
+                <li>Many users prefer a mobile-friendly solution with real-time tracking.</li>
+                <li>Students need automated insights and goal-setting features.</li>
+            </ul>
+            <p>These insights helped shape the features and functionality of the app, ensuring that it addresses real student pain points.</p>
+        </div>
+        <div class="section">
+            <h2>Wireframing & Prototyping</h2>
+            <p>We created low-fidelity wireframes to experiment with different layouts and user flows. Our goal was to ensure a seamless navigation experience and clear financial data visualization. Through multiple iterations, we refined the wireframes based on usability testing results.</p>
+            <button onclick="showPopup()">View Wireframe</button>
+        </div>
+        <div class="popup" id="wireframePopup">
+            <h2>Wireframe</h2>
+            <p><a href="https://www.figma.com/proto/fg1Cxkdgut5vEApnWQ5vp9/Mobile-Applicaiton-Prototype?page-id=242%3A515&node-id=350-1401&viewport=422%2C-123%2C0.3&t=udLkx4zwuSx9TxAC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=350%3A1401&show-proto-sidebar=1" 
+                  target="_blank">Click here to view the wireframe</a></p>
+            <br><br>
+            <button onclick="closePopup()">Close</button>
+        </div>
+        
+        <div class="section">
+            <h2>User Testing & Iteration</h2>
+            <p>We conducted usability testing with students to refine our prototype. Some of the key feedback and improvements made include:</p>
+            <ul>
+                <li><strong>Dashboard Enhancements:</strong> Users wanted a clearer overview of their expenses, so we redesigned the layout for better visibility.</li>
+                <li><strong>Split-Expense Feature:</strong> A new feature was added based on student feedback, allowing shared expenses to be easily divided.</li>
+                <li><strong>Improved Accessibility:</strong> High-contrast colors and better navigation were implemented to enhance usability for all users.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Final Solution & Impact</h2>
+            <p>The final version of the Financial Tracker app integrates intuitive navigation, real-time financial tracking, and personalized goal management. After implementation:</p>
+            <ul>
+                <li>70% of students reported a reduction in financial stress.</li>
+                <li>Users found the app more effective than traditional budget tracking methods.</li>
+                <li>The split-expense feature received positive feedback, helping students manage shared costs.</li>
+            </ul>
+            <p>The design process ensured that the app meets both functional and usability requirements, making financial management easier for students.</p>
+        </div>
+    </div>
+    <script>
+        function showPopup() {
+            document.getElementById('wireframePopup').style.display = 'block';
+        }
+        function closePopup() {
+            document.getElementById('wireframePopup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
